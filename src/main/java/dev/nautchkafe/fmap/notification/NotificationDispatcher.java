@@ -43,10 +43,11 @@ public final class NotificationDispatcher implements NotificationAudience {
     public void broadcast(final String contentMessage) {
         final Audience audience = audienceProvider.all();
 
+         // We throw an exception if an error occurs.
         NotificationMessageValidator.validate(contentMessage)
                 .fold(error -> {
                     LOGGER.error("Invalid message format: {}", error.getMessage());
-                    throw error;  // Rzucamy wyjątek, jeśli wystąpił błąd
+                    throw error; 
                 }, message -> notificationFactory.createNotificationMessage(message)
                         .peek(deserializedMsg -> publishNotification(audience, NotificationMessageKey.CHAT, deserializedMsg))
                         .onEmpty(() -> LOGGER.error("Failed to deserialize message: {}", message)));
