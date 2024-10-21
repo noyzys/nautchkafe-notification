@@ -13,6 +13,7 @@ import java.util.Locale;
  */
 public final class TranslatorKeyMapper implements TranslatorFlow {
 
+     // multimap :*
     private final Map<String, List<Translation>> translations;
 
     public TranslatorKeyMapper(final Map<String, List<Translation>> put) {
