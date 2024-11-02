@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    kotlin("jvm") version "2.0.20"
+    kotlin("jvm") version "2.0.21"
 }
 
 group = "dev.nautchkafe.fmap.notification"
@@ -25,17 +25,17 @@ dependencies {
 
     // minecraft server-side software stuff
     compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
-    compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot-api:1.20.1-experimental-SNAPSHOT")
     compileOnly("org.spongepowered:spongeapi:9.1.0") // Sponge API
     implementation("com.github.Minestom:Minestom:1.4.0")
 
     /* minecraft proxy side software */
-    compileOnly("com.velocitypowered:velocity-api:1.1.0")
+    compileOnly("com.velocitypowered:velocity-api:1.1.9")
     compileOnly("net.md-5:bungeeapi:1.20")
 
     // kyori stuff
     implementation("net.kyori.adventure:adventure-api:4.11.0")
-    implementation("net.kyori:adventure-platform-bukkit:4.3.2")
+    implementation("net.kyori:adventure-platform-bukkit:4.3.4")
     implementation("net.kyori.adventure:adventure-text-minimessage:4.11.0")
 
     // tests stuff
