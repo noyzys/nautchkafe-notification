@@ -39,7 +39,7 @@ dependencies {
     implementation("net.kyori.adventure:adventure-text-minimessage:4.11.0")
 
     // tests stuff
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
+    testImplementation(platform("org.junit:junit-bom:5.11.3"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
