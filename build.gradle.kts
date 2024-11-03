@@ -26,11 +26,11 @@ dependencies {
     // minecraft server-side software stuff
     compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
     compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
-    compileOnly("org.spongepowered:spongeapi:9.1.0") // Sponge API
+    compileOnly("org.spongepowered:spongeapi:12.0.0") // Sponge API
     implementation("com.github.Minestom:Minestom:1.4.0")
 
     /* minecraft proxy side software */
-    compileOnly("com.velocitypowered:velocity-api:1.1.0")
+    compileOnly("com.velocitypowered:velocity-api:3.1.1")
     compileOnly("net.md-5:bungeeapi:1.20")
 
     // kyori stuff
