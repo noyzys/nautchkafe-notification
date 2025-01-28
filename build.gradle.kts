@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    kotlin("jvm") version "2.0.21"
+    kotlin("jvm") version "2.1.10"
 }
 
 group = "dev.nautchkafe.fmap.notification"
