@@ -27,7 +27,7 @@ dependencies {
     compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
     compileOnly("org.spigotmc:spigot-api:1.20.1-experimental-SNAPSHOT")
     compileOnly("org.spongepowered:spongeapi:13.0.0") // Sponge API
-    implementation("com.github.Minestom:Minestom:1.4.0")
+    implementation("com.github.Minestom:Minestom:2025.07.04-1.21.5")
 
     /* minecraft proxy side software */
     compileOnly("com.velocitypowered:velocity-api:3.1.1")
