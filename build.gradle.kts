@@ -21,16 +21,16 @@ repositories {
 
 dependencies {
     // fp stuff
-    implementation("io.vavr:vavr:0.10.5")
+    implementation("io.vavr:vavr:1.0.1")
 
     // minecraft server-side software stuff
-    compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:26.2.build.121-stable")
     compileOnly("org.spigotmc:spigot-api:1.20.1-experimental-SNAPSHOT")
-    compileOnly("org.spongepowered:spongeapi:14.0.0") // Sponge API
-    implementation("com.github.Minestom:Minestom:2025.07.04-1.21.5")
+    compileOnly("org.spongepowered:spongeapi:17.0.0") // Sponge API
+    implementation("com.github.Minestom:Minestom:2026.08.28-26.2")
 
     /* minecraft proxy side software */
-    compileOnly("com.velocitypowered:velocity-api:3.1.1")
+    compileOnly("com.velocitypowered:velocity-api:4.1.1")
     compileOnly("net.md-5:bungeeapi:1.20")
 
     // kyori stuff
